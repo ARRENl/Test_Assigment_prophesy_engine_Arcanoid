@@ -1,0 +1,2 @@
+3 difficulty levels
+
