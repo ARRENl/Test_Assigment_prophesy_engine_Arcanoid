@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "quake1mdl", "quake1mdl.vcproj", "{7E5CE568-4C06-44B0-8B18-8C47921F9145}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E5CE568-4C06-44B0-8B18-8C47921F9145}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7E5CE568-4C06-44B0-8B18-8C47921F9145}.Debug|Win32.Build.0 = Debug|Win32
+		{7E5CE568-4C06-44B0-8B18-8C47921F9145}.Release|Win32.ActiveCfg = Release|Win32
+		{7E5CE568-4C06-44B0-8B18-8C47921F9145}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

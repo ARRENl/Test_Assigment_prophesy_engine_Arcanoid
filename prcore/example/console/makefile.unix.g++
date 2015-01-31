@@ -1,0 +1,34 @@
+TARGET   = color32 linkedlist string timertest vector ziptest indextest pixelformat
+INCLUDE  = ../../include
+CPP      = g++
+CPPFLAGS = -g -Wall -I$(INCLUDE)
+
+all : $(TARGET)
+
+color32 : color32.cpp
+	$(CPP) $(CPPFLAGS) color32.cpp -lprcore -o color32
+
+linkedlist : linkedlist.cpp
+	$(CPP) $(CPPFLAGS) linkedlist.cpp -lprcore -o linkedlist
+
+string : string.cpp
+	$(CPP) $(CPPFLAGS) string.cpp -lprcore -o string
+
+timertest : timertest.cpp
+	$(CPP) $(CPPFLAGS) timertest.cpp -lprcore -o timertest
+
+vector : vector.cpp
+	$(CPP) $(CPPFLAGS) vector.cpp -lprcore -o vector
+
+ziptest : ziptest.cpp
+	$(CPP) $(CPPFLAGS) ziptest.cpp -lprcore -o ziptest
+
+indextest : indextest.cpp
+	$(CPP) $(CPPFLAGS) indextest.cpp -lprcore -o indextest
+
+pixelformat : pixelformat.cpp
+	$(CPP) $(CPPFLAGS) pixelformat.cpp -lprcore -o pixelformat
+
+.PHONY : clean
+clean: 
+	rm -f *~ *.o $(TARGET)

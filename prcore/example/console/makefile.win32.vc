@@ -1,0 +1,20 @@
+cc     = cl.exe
+flags  = /c /Ox /GA /G5 /Zp4 /W3 /GX /GR /nologo
+syslib = prcore.lib user32.lib gdi32.lib
+progs  = color32.exe linkedlist.exe string.exe timertest.exe vector.exe ziptest.exe indextest.exe pixelformat.exe
+
+.cpp.exe:
+	$(cc) $(flags) $<
+	link $(syslib) $*
+
+.obj.exe:
+	link $(syslib) $*
+
+.cpp.obj:
+	$(cc) $(flags) $<
+
+all: $(progs)
+
+clean:
+	del *.obj
+	del *.exe
